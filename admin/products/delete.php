@@ -9,5 +9,5 @@
  
 
  
- header("location:index.php");
+ header("location: show_products.php");
 ?>

@@ -18,34 +18,35 @@
 ?> -->
      <div class="container ">
      <div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-4 col-lg-4 m-auto border border-primary mt-4 d-md-flex justify-content-sm-center">
+    <div class="col-md-4 col-sm-5 m-auto border border-primary mt-4 d-md-flex justify-content-sm-center">
     <form action="insert.php" method="POST" enctype="multipart/form-data">
     <div class = "mb-3 ">
-     <p class="text-center fw-bold fs-3 text-warning">Products Update</p>
+     <p class="text-center fw-bold fs-3 text-warning">Selling Quantity Update</p>
     </div>
   <div class="mb-3 ">
   <label  class="form-label">Products Name</label>
   <input type="text" value ="<?php echo $data['name'] ?>" name ="Pname" class="form-control" placeholder="Enter Products Name" autocomplete="off" required>
 </div>
-  <div class="mb-3">
+<div class="mb-3">
   <label  class="form-label">Products Quantity</label>
-  <input type="number" value ="<?php echo $data['quantity'] ?>"  name = "Pquantity" class="form-control" placeholder="Enter Products Quantity" required>
+  <input type="number" value ="<?php echo $data['quantity'] ?>"  name = "Pquantity" class="form-control" placeholder="Enter Products quantity" required>
 </div>
   <div class="mb-3">
+ 
+  <div class="mb-3">
   <label  class="form-label">Products Selling Quantity</label>
-  <input type="number" value = "0" name = "Psellquantity" class="form-control" placeholder="Enter Products price" required>
+  <input type="number"   name = "Psellquantity" class="form-control" placeholder="Enter Products selling Quantity ">
 </div>
   <div class="mb-3">
   <label  class="form-label">Enter Date</label>
   <input type="date" value ="<?php echo $data['date'] ?>"  name = "Pdate" class="form-control" required>
 </div>
   <div class="mb-3 ">
-  <label  class="form-label">Uplod Photo</label>
-  <input type="file"  value ="<?php echo $data['image'] ?>"  name = "Pimage" accept=".jpg, .jpeg, .png" class="form-control" required ><br>
+ 
   <img src="<?php echo $data['image'] ?>" style ="height:100px" alt="">
 </div>
 <input type="hidden" name="Pid" value="<?php echo $data['id'] ?>">
-<button name="update" class="bg-danger  rounded-pill fs-4 fw-bold my-3  d-grid col-9 mx-auto">Update Product</button>
+<button name="selling_quantity" class="bg-danger rounded-pill fs-4 fw-bold my-3  d-grid col-9 mx-auto">Update</button>
 </form>
     
  
